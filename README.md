@@ -1,4 +1,6 @@
-# Rcpp algorithms
+# Rcpp algorithms, Compare R and C++
+
+### sourceCpp
 
 ```c++
 #include <Rcpp.h>
