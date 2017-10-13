@@ -1,7 +1,16 @@
 # Rcpp algorithms, Compare R and C++
 
-### sourceCpp
+### cppFunction & sourceCpp
+```r
+(require (Rcpp))
 
+(cppFunction ('int one() {
+  return 1;
+}'))
+
+(one ()) #=> "[1] 1" 标量输出
+```
+* fib_cpp_1.cpp
 ```c++
 #include <Rcpp.h>
 using namespace Rcpp;
