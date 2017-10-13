@@ -1,4 +1,7 @@
-# Rcpp algorithms, Compare R and C++
+# Rcpp Algorithms, R的快速建模 和 C++无限的资源互操作
+* Compare R and C++
+* Interop R and C++(使用无限的C++算法库资源,OpenCV,TensorFlow,各种机器学习和深度学习,机器视觉,语音识别算法库)
+* R package develop
 
 ### cppFunction & sourceCpp
 ```r
@@ -47,6 +50,16 @@ int fib_cpp_1(int n)
 
 ```
 ### Matrix & Vector
+##### C++ 操作 R数值向量
 ```r
-```
+(cppFunction ('double sumC(NumericVector x) {
+  int n = x.size();
+  double total = 0;
+  for(int i = 0; i < n; ++i) {
+    total += x[i];
+  }
+  return total;
+}'))
 
+(sumC (c (1, 1, 3))) #=> [1] 5
+```
