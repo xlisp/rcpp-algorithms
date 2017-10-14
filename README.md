@@ -63,3 +63,17 @@ int fib_cpp_1(int n)
 
 (sumC (c (1, 1, 3))) #=> [1] 5
 ```
+##### C++ 向量输出`NumericVector outVector(ys.size())`创建一个长度为n的数值向量
+```r
+(cppFunction ('NumericVector pdistC(double x, NumericVector ys) {
+  int n = ys.size();
+  NumericVector out(n);
+
+  for(int i = 0; i < n; ++i) {
+    out[i] = sqrt(pow(ys[i] - x, 2.0));
+  }
+  return out;
+}'))
+
+(pdistC (-1, (c (2, 2)))) #=> [1] 3 3
+```
