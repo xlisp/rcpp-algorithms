@@ -1,7 +1,21 @@
+
 # Rcpp Algorithms, R的快速建模 和 C++无限的资源互操作
 * Compare R and C++
 * Interop R and C++(使用无限的C++算法库资源,OpenCV,TensorFlow,各种机器学习和深度学习,机器视觉,语音识别算法库)
 * R package develop
+
+
+
+- [Rcpp Algorithms, R的快速建模 和 C++无限的资源互操作](#rcpp-algorithms-r%E7%9A%84%E5%BF%AB%E9%80%9F%E5%BB%BA%E6%A8%A1-%E5%92%8C-c%E6%97%A0%E9%99%90%E7%9A%84%E8%B5%84%E6%BA%90%E4%BA%92%E6%93%8D%E4%BD%9C)
+    - [cppFunction & sourceCpp](#cppfunction--sourcecpp)
+    - [Matrix & Vector](#matrix--vector)
+        - [C++ 操作 R数值向量](#c-%E6%93%8D%E4%BD%9C-r%E6%95%B0%E5%80%BC%E5%90%91%E9%87%8F)
+        - [C++ 向量输出`NumericVector outVector(ys.size())`创建一个长度为n的数值向量](#c-%E5%90%91%E9%87%8F%E8%BE%93%E5%87%BAnumericvector-outvectoryssize%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E9%95%BF%E5%BA%A6%E4%B8%BAn%E7%9A%84%E6%95%B0%E5%80%BC%E5%90%91%E9%87%8F)
+        - [c++操作矩阵, 一层层for操作(就像生成学号一样)](#c%E6%93%8D%E4%BD%9C%E7%9F%A9%E9%98%B5-%E4%B8%80%E5%B1%82%E5%B1%82for%E6%93%8D%E4%BD%9C%E5%B0%B1%E5%83%8F%E7%94%9F%E6%88%90%E5%AD%A6%E5%8F%B7%E4%B8%80%E6%A0%B7)
+        - [c++ 矩阵输出](#c-%E7%9F%A9%E9%98%B5%E8%BE%93%E5%87%BA)
+
+
+
 
 ### cppFunction & sourceCpp
 ```r
