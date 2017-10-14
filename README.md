@@ -79,6 +79,7 @@ int fib_cpp_1(int n)
 ```
 ##### c++操作矩阵, 一层层for操作(就像生成学号一样)
 ```r
+# x(i, j) c++中用()对矩阵进行子集选取
 (cppFunction ('NumericVector rowSumsC(NumericMatrix x) {
   int nrow = x.nrow(), ncol = x.ncol();
   NumericVector out(nrow);
