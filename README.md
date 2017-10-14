@@ -77,3 +77,21 @@ int fib_cpp_1(int n)
 
 (pdistC (-1, (c (2, 2)))) #=> [1] 3 3
 ```
+##### c++操作矩阵, 一层层for操作(就像生成学号一样)
+```r
+(cppFunction ('NumericVector rowSumsC(NumericMatrix x) {
+  int nrow = x.nrow(), ncol = x.ncol();
+  NumericVector out(nrow);
+
+  for (int i = 0; i < nrow; i++) {
+    double total = 0;
+    for (int j = 0; j < ncol; j++) {
+      total += x(i, j);
+    }
+    out[i] = total;
+  }
+  return out;
+}'))
+
+(rowSumsC (matrix ((sample (100)), 10))) #=> [1] 489 515 476 415 547 551 357 663 533 504
+```
