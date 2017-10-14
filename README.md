@@ -96,3 +96,17 @@ int fib_cpp_1(int n)
 
 (rowSumsC (matrix ((sample (100)), 10))) #=> [1] 489 515 476 415 547 551 357 663 533 504
 ```
+##### c++ 矩阵输出
+```r
+(cppFunction ('NumericMatrix zeroMat(int x, int y) {
+  NumericMatrix outMat(x, y);
+  return outMat;
+}'))
+
+(zeroMat (3, 2))
+#=>
+      [,1] [,2]
+ [1,]    0    0
+ [2,]    0    0
+ [3,]    0    0
+```
